@@ -49,3 +49,18 @@ else {
 }
 document.getElementById("how_old_are_you?").innerHTML = Vote;
 }
+
+function time_function() {
+    var time = new Date() .getHours();
+var reply;
+if (time < 12 == time > 0) {
+    reply = "it is morning time.";
+}
+else if (time > 12 == time < 18) {
+    reply = "it is the afternoon.";
+}
+else {
+    reply= "it is evening time.";
+}
+document.getElementById("time_of_day").innerHTML = reply;
+}
